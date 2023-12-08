@@ -36,4 +36,6 @@ public class Paddle : MonoBehaviour
             this.rigidbody.AddForce(this.direction * this.speed);
         }
     }
+
+    
 }

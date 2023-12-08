@@ -4,7 +4,7 @@ using UnityEngine;
 public class NewBehaviourScript : MonoBehaviour
 {
     public new Rigidbody2D rigidbody { get; private set; }
-    public float speed = 1000f;
+    public float speed = 2000f;
 
     private void Awake()
     {
