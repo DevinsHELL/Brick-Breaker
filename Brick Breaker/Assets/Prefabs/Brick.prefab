@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8077445019320209990}
   - component: {fileID: 8180034999876576894}
   - component: {fileID: 1694048874555756205}
+  - component: {fileID: 7780784000812987363}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 798eb00a277c43c4a855ade3d218e039, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.95294124, g: 0.95294124, b: 0.95294124, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -130,3 +131,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &7780784000812987363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7120120926845491240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64733cac9913f254dad0c42d3946a85b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  states:
+  - {r: 0, g: 0.09069872, b: 1, a: 0}
+  - {r: 1, g: 0, b: 0, a: 0}
+  - {r: 0.88987577, g: 1, b: 0, a: 0}
+  - {r: 0, g: 1, b: 0.116175175, a: 0}
+  - {r: 1, g: 1, b: 1, a: 0}
+  Unbreakable: 0
