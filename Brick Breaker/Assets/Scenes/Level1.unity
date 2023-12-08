@@ -436,7 +436,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8077445019320209990, guid: b28f343ce6d09d849869349c84de0d8e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.61
+      value: 11.51
       objectReference: {fileID: 0}
     - target: {fileID: 8077445019320209990, guid: b28f343ce6d09d849869349c84de0d8e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -925,6 +925,7 @@ GameObject:
   - component: {fileID: 868503210}
   - component: {fileID: 868503209}
   - component: {fileID: 868503208}
+  - component: {fileID: 868503212}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -981,9 +982,9 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 6200000, guid: 3170819f4bca58648819c0ff2657146b, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -993,7 +994,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &868503210
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1061,6 +1062,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &868503212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868503207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22efd6cc44effa543be7e36c270a9e0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 500
 --- !u!1 &961697830
 GameObject:
   m_ObjectHideFlags: 0
@@ -1111,7 +1125,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8077445019320209990, guid: b28f343ce6d09d849869349c84de0d8e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.61
+      value: 11.51
       objectReference: {fileID: 0}
     - target: {fileID: 8077445019320209990, guid: b28f343ce6d09d849869349c84de0d8e, type: 3}
       propertyPath: m_LocalPosition.y
