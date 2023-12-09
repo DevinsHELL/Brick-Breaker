@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     }
     public void Start()
     {
-        NewGame();
+        NewGame(); //starts game
     }
 
     private void NewGame()

@@ -5,12 +5,12 @@ public class Brick : MonoBehaviour
 {
     public int health { get; private set; }
     public SpriteRenderer spriteRender { get; private set; }
-    public Color[] states;
-    public bool Unbreakable;
+    public Color[] states; //ades a color array called states that will visulize the ehalth of the bricks
+    public bool Unbreakable; 
 
     private void Awake()
     {
-        this.spriteRender = GetComponent<SpriteRenderer>();
+        this.spriteRender = GetComponent<SpriteRenderer>(); //grabs sprite renderer
 
     }
     private void Start()
@@ -22,7 +22,7 @@ public class Brick : MonoBehaviour
 
         }
     }
-    private void Hit()
+    private void Hit() //dectects when the ball hits the bricks
     {
         if (this.Unbreakable)
         {
@@ -31,14 +31,14 @@ public class Brick : MonoBehaviour
         {
            
         }
-        this.health--;
+        this.health--; //removes a point of health from brick
 
         if (this.health <= 0)
         {
-            this.gameObject.SetActive(false);
+            this.gameObject.SetActive(false); //removes brick when hit
         } else
         {
-            this.spriteRender.color = this.states[this.health - 1];
+            this.spriteRender.color = this.states[this.health - 1]; //changes stae when hit 
         }
 
       
@@ -47,7 +47,7 @@ public class Brick : MonoBehaviour
     {
         if (collision.gameObject.name == "Ball")
         {
-            Hit();
+            Hit(); // calls Hit evertime there is a collision 
         }
     }
 }

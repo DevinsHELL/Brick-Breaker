@@ -12,9 +12,9 @@ public class Paddle : MonoBehaviour
 
 
     }
-    private void Update()
+    private void Update() //updates every frame
     {
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)){
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)){ // gets user input from the arrow keys and A, D
             this.direction = Vector2.left;
         } else if (Input.GetKey(KeyCode. D) || Input.GetKey(KeyCode.RightArrow))
         {
@@ -31,7 +31,7 @@ public class Paddle : MonoBehaviour
     private void FixedUpdate()
     {
 
-        if (this.direction != Vector2.zero)
+        if (this.direction != Vector2.zero) //adds speed and drirection to the rigidbody
         {
             this.rigidbody.AddForce(this.direction * this.speed);
         }
